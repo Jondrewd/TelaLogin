@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     font-family: 'cyberpunk', sans-serif;
+    overflow: hidden;
 }
 body{
     width: 100vw;
@@ -13,6 +14,8 @@ body{
     color: rgb(0, 0, 0);
     background-image: url(./sources/Cyberpunk2077_Blood_in_the_rain_RGB-en.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    
 }
 .effect{
     background-color: rgba(0, 0, 0, 0.511);
@@ -22,15 +25,15 @@ body{
 .loginbox{
     background-color: rgba(255, 255, 255, 0.227);
     backdrop-filter: blur(2px);
-    width: 25vw;
-    height: 45vh;
+    min-width: 25vw;
+    min-height: 45vh;
     position: absolute;
     text-align: center;
     top: 25%;
-    left: 40%;
+    left: 37%;
     border-radius: 8px;
     box-shadow:1px 1px 10px rgb(255, 0, 242);
-    overflow: hidden;
+ 
 }
 .loginbox h1{
     margin-top: 10px;
@@ -72,4 +75,22 @@ button:hover{
 .recuperar{
     font-size: .8em;
     margin-top: 10px;
+}
+@media (max-width:900px) {
+    .loginbox{
+        background-color: rgba(255, 255, 255, 0.227);
+        backdrop-filter: blur(0px);
+        position: relative;
+        margin: auto;
+        left: 0;
+        width: 80vw;
+        height: 45vh;
+        text-align: center;
+        border-radius: 8px;
+        box-shadow:1px 1px 10px rgb(255, 0, 242);
+     
+    }
+    .effect{
+        b
+    }
 }
