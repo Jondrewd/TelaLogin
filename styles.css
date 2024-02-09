@@ -2,6 +2,7 @@
     font-family:'cyberpunk';
     src:url("./sources/cyberpunks/Cyberpunks.ttf");
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -31,10 +32,10 @@ body{
     text-align: center;
     top: 25%;
     left: 37%;
-    border-radius: 8px;
-    box-shadow:1px 1px 10px rgb(255, 0, 242);
- 
+    box-shadow: 1px 1px 10px rgb(0, 247, 255);
 }
+
+
 .loginbox h1{
     margin-top: 10px;
     font-size: 3em;
@@ -91,4 +92,71 @@ button:hover{
      
     }
 
+}
+/*Animações*/
+.neon{
+    position: absolute;
+    display: block;
+}
+.neon:nth-child(1){
+    width: 45vh;
+    height: 2px;
+    background: linear-gradient(0deg, transparent, rgb(0, 255, 251));
+    animation: neon 1s infinite;
+    animation-delay: .25s;
+}
+@keyframes neon {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+.neon:nth-child(2){
+    width: 2px;
+    height: 100%;
+    left: 99.4%;
+    background: linear-gradient(180deg, transparent, rgb(0, 255, 251));
+    animation: neon2 1s  infinite;
+    animation-delay: .5s;
+}
+@keyframes neon2 {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+.neon:nth-child(3){
+    width: 100%;
+    height: 2px;
+    top: 99.4%;
+    background: linear-gradient(270deg, transparent, rgb(0, 255, 251));
+    animation: neon3 1s  infinite;
+    animation-delay: .75s;
+}
+@keyframes neon3 {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+.neon:nth-child(4){
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(0, 255, 251));
+    animation: neon4 1s infinite;
+    animation-delay: 1s;
+}
+@keyframes neon4 {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -100%;
+    }
 }
