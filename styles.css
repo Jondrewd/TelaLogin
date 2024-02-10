@@ -99,7 +99,7 @@ button:hover{
     display: block;
 }
 .neon:nth-child(1){
-    width: 45vh;
+    width: 100%;
     height: 2px;
     background: linear-gradient(0deg, transparent, rgb(0, 255, 251));
     animation: neon 1s infinite;
